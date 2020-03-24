@@ -14,24 +14,32 @@ void Penjumlahan()
      j=x+y;
      cout<<"\nHasil dari penjumlahan antara "<<x<<" dan "<<y<<" adalah "<<j<<endl;
 }
-
+void Pembagian();
+void Pembagian()
+{
+     Pertama();
+     j=x/y;
+     cout<<"\nHasil dari pembagian antara "<<x<<" dibagi "<<y<<" adalah "<<j<<endl;
+}
 void keluar();
 void keluar()
 {
      cout<<"TERIMAKASIH!"<<endl;
 }
-main()
+int main()
 {
       cout<<"\tMENU UTAMA"<<endl;
       cout<<"=========================="<<endl;
       cout<<"1. OPERASI PENJUMLAHAN"<<endl;
-      cout<<"2. KELUAR / OUT"<<endl;
+      cout<<"2. OPERASI PEMBAGIAN"<<endl;
+      cout<<"3. KELUAR / OUT"<<endl;
       cout<<"==========================="<<endl;
-      cout<<"\n=> MASUKKAN KODE (1..2) = "; cin>>o;
+      cout<<"\n=> MASUKKAN KODE (1..3) = "; cin>>o;
 switch (o)
 {
        case 1: Penjumlahan(); break;
-       case 2: keluar (); break;
+       case 2: Pembagian(); break;
+       case 3: keluar (); break;
        default : cout<<"Pilihan cuman 5"<<endl;break;
 }
 return 0;
